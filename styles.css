@@ -1,0 +1,164 @@
+
+
+body{
+    font-family: 'Barlow Semi Condensed';
+    margin: 0;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    padding: 164px 165px;
+    background-color: #ECF2F8;
+   
+  }
+  
+  .container{
+    width: 100%;
+    background: hsl(210, 46%, 95%);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: " Daniel Daniel Jonathan Kira "
+                         " Jeanette Patrick Patrick Kira ";
+    
+  
+                         gap: 30px;
+                         row-gap: 24px;
+   
+}
+  img{
+    border-radius: 28px;
+    object-fit: contain;
+  }
+
+.client{
+    padding: 32px 32px;
+    border-radius: 8px;
+    box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.25)
+}
+.daniel{
+    background-color:#733FC8; 
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-position:75% top ;
+    background-repeat: no-repeat;
+    grid-area: Daniel;
+}
+.jonathan{
+   background:  #48556A;
+   grid-area:Jonathan;
+}
+.kira{
+    grid-area: Kira;
+}
+.jeanette{
+    grid-area: Jeanette;
+}
+
+.patrick{
+    background-color: #19202D;
+    grid-area: Patrick;
+
+}
+
+.jeanette, .kira{
+    background: #FFF;
+}
+
+
+.danny{
+    border:2px solid #A775F1;
+}
+.patt{
+    border: 2px solid #733FC8;
+
+}
+.comment p:first-of-type{
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.comment p:nth-of-type(2){
+    color: #FFF;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    opacity: 0.7;
+}
+.dan p:nth-of-type(2){
+    color: #CFCFCF;
+    
+}
+
+.jeanettekira p:nth-of-type(2){
+color: #48556A;
+
+}
+.jeanettekira p:first-of-type{
+color: #48556A;
+font-size: 20px;
+font-weight: 600;
+line-height: normal;
+}
+
+
+.picture{
+    display: flex;
+    gap:20px;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.name span:first-of-type{
+    color: #FFF;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 13px;
+}
+.name span:nth-of-type(2){
+    color: #FFF;
+    font-size: 11Px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 11px;
+    opacity: 0.5;
+}
+
+.jeanekira span:first-of-type{
+color: #48556A;
+font-size: 13px;
+font-weight: 500;
+line-height: 13px;
+}
+
+
+.jeanekira span:nth-of-type(2){
+    color: #48556A;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 11px;
+    opacity: 0.5;
+}
+
+  
+  
+  
+  @media screen and (min-width: 270px) and (max-width:810px){
+  
+    .container{
+      display: flex;
+      flex-direction: column;
+    }
+   body{
+    padding: 71px 24px;
+   }
+  
+  }
